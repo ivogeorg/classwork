@@ -17,8 +17,18 @@ def joining_string_lists():
     print(new_string)
 
 
+def cap_join(l):
+    new_l = []
+    for s in l:
+        new_l.append(s[0].upper() + s[1:])
+    return ' '.join(new_l)
+
+
 if __name__ == '__main__':
     print("Hello, world!")
     joining_string_lists()
+
+    L = ["home", "sweet", "home"]
+    print(cap_join(L))
 
 
